@@ -18,7 +18,7 @@ spaceship2.launch = function() {
 
 spaceship2.launch();
 
-var FastShip = function() {
+var FastShip = function(topSpeed, shipName) {
     this.topSpeed = '50000lyph'
     this.shipName = 'Space Blaster'
     this.launch = function() {
@@ -26,9 +26,9 @@ var FastShip = function() {
     }
 }
 
-var fastestShip = new FastShip()
+var fasterShip = new FastShip()
 
-fastestShip.launch();
+fasterShip.launch();
 
 class SlowShip {
     constructor() {
@@ -41,9 +41,34 @@ class SlowShip {
     }
 }
 
+var slowerShip = new SlowShip();
+
+slowerShip.launch();
+
+// adventurer mode 
+//1
+
+var spaceship1Copy = Object.assign(spaceship1, {topSpeed: '3lyph', shipName: 'Glaxay Cruiser II'});
+
+spaceship1Copy.launch();
+
+var spaceship2Clone = Object.assign(spaceship2, {topSpeed: '50lyph', shipName: 'Star Seeker'});
+
+spaceship2Clone.launch();
+
+//2
+
+var fastestShip = new FastShip();
+fastestShip.topSpeed = '700000';
+fastestShip.shipName = 'Mars Launcher';
+
+fastestShip.launch();
+
 var slowestShip = new SlowShip();
+slowestShip.topSpeed = '.5lyph';
+slowestShip.shipName = 'Star Gazer';
 
 slowestShip.launch();
 
-// adventurer mode 
+
 
