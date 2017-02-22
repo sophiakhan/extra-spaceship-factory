@@ -4,6 +4,8 @@ var spaceship1 = {
 
     launch: function() {
         console.log(this.shipName + ' launching to infinity and beyond at ' + this.topSpeed + '!')
+
+    setTimeout(function(){ alert("Landing Successful. Welcome to Mars."); }, 3000);
     }
 }
 
@@ -14,6 +16,8 @@ spaceship2.topSpeed = '100lyph'
 spaceship2.shipName = 'The Wayfarer'
 spaceship2.launch = function() {
     console.log(this.shipName + ' launching to infinity and beyond at ' + this.topSpeed + '!')
+
+setTimeout(function(){ alert("Welcome to Jupiter."); }, 3000);
 }
 
 spaceship2.launch();
@@ -24,6 +28,7 @@ var FastShip = function(topSpeed, shipName) {
     this.launch = function() {
         console.log(this.shipName + ' launching to infinity and beyond at ' + this.topSpeed + '!')
     }
+    setTimeout(function(){ alert("Welcome to Pluto."); }, 3000);
 }
 
 var fasterShip = new FastShip()
@@ -69,6 +74,10 @@ slowestShip.topSpeed = '.5lyph';
 slowestShip.shipName = 'Star Gazer';
 
 slowestShip.launch();
+
+//3
+
+
 
 
 
